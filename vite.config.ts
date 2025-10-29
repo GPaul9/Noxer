@@ -13,6 +13,7 @@ export default defineConfig({
       },
     }),
   ],
+  base: '/noxer/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
