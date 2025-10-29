@@ -1,0 +1,34 @@
+@use '@/styles/variables' as *;
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__message {
+    color: $color-content-primary;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-size: clamp(1rem, 0.5vw + 0.9rem, 1.2rem);
+  }
+
+  &__refetch {
+    padding: 10px 20px;
+    border: 1px solid $color-bg-primary;
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-content-primary;
+    background-color: $color-bg-light;
+  }
+}

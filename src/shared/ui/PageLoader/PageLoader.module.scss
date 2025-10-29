@@ -1,0 +1,20 @@
+@use '@/styles/mixins' as *;
+@use '@/styles/variables' as *;
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-content-primary, 0.5);
+
+  &__icon {
+    @include loader(60px);
+  }
+}

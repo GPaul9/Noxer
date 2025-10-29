@@ -1,0 +1,35 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+@use "sass:map";
+
+@mixin loader($size, $border-width: 5px) {
+  width: $size;
+  height: $size;
+  border: $border-width solid $color-bg-secondary;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }
+}
+
+@mixin respond-to($name) {
+  $value: map.get($breakpoints, $name);
+
+  @if $value {
+    @media (min-width: #{$value}px) {
+      @content;
+    }
+  } @else {
+    @warn "Нет брейкпоинта с именем '#{$name}'";
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "noxer",
+  "version": "1.0.0",
+  "description": "test project Noxer",
+  "main": "src/main.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint ./src --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint ./src --ext .ts,.tsx,.js,.jsx --fix"
+  },
+  "author": "GPaul9",
+  "license": "ISC",
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.5",
+    "axios": "^1.13.0",
+    "normalize.css": "^8.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@types/node": "^24.9.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.4.0",
+    "postcss": "^8.5.6",
+    "sass": "^1.93.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^7.1.12",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}

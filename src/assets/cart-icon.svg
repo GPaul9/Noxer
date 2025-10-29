@@ -1,0 +1,11 @@
+<svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21.000000" height="21.000000" fill="none">
+	<rect id="cart" width="21.000000" height="21.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="cart">
+		<path id="Vector" d="M7.70949 1.75L4.54199 4.92625" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.29999995" />
+		<path id="Vector" d="M13.292 1.75L16.4595 4.92625" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.29999995" />
+		<path id="Vector" d="M3.6925 5.11719L17.3075 5.11719C18.3838 5.11719 19.25 5.24844 19.25 6.86719C19.25 8.74844 18.3838 8.61719 17.3075 8.61719L3.6925 8.61719C2.61625 8.61719 1.75 8.74844 1.75 6.86719C1.75 5.24844 2.61625 5.11719 3.6925 5.11719Z" fill-rule="nonzero" stroke="currentColor" stroke-width="1.29999995" />
+		<path id="Vector" d="M0 0L3.10625 0" stroke="currentColor" stroke-linecap="round" stroke-width="1.29999995" transform="matrix(0,1,-1,0,8.54004,12.25)" />
+		<path id="Vector" d="M0 0L3.10625 0" stroke="currentColor" stroke-linecap="round" stroke-width="1.29999995" transform="matrix(0,1,-1,0,12.5654,12.25)" />
+		<path id="Vector" d="M3.0625 8.75L4.29625 16.31C4.57625 18.0075 5.25 19.25 7.7525 19.25L13.0288 19.25C15.75 19.25 16.1525 18.06 16.4675 16.415L17.9375 8.75" fill-rule="nonzero" stroke="currentColor" stroke-linecap="round" stroke-width="1.29999995" />
+	</g>
+</svg>

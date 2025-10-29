@@ -1,0 +1,142 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.dropdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-page;
+  z-index: 100;
+  padding-top: 30px;
+  z-index: 95;
+
+  &_loader {
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  &__loader-icon {
+    $size: 40px;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - $size / 2);
+    @include loader($size, 3px)
+  }
+
+  // popular
+  &__popular-title {
+    margin: 0;
+    margin-bottom: 9px;
+
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: $color-title;
+  }
+
+  &__popular-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.875rem;
+    color: $color-content-primary;
+
+    @include respond-to(xs) {
+      font-size: 0.9375rem;
+    }
+    @include respond-to(sm) {
+      font-size: 1.0625rem;
+    }
+  }
+
+  &__popular-icon {
+    flex-shrink: 0;
+    width: 11px;
+    height: 11px;
+  }
+
+  &__popular-content {
+    padding: 12px 0;
+    border-bottom: 1px solid $color-content-light;
+    width: 100%;
+    text-align: left;
+  }
+
+  // result
+  .dropdown__result-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: $color-bg-primary;
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 0px 10px 0px $color-shadows;
+  }
+
+  &__result-empty {
+    padding: 40px 0 20px;
+    font-size: 0.8rem;
+    color: $color-content-primary;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.dropdown-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &__img-wrapper {
+    flex-shrink: 0;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+    @include respond-to(xs) {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: $color-content-primary;
+
+    @include respond-to(xs) {
+      font-size: 0.875rem;
+    }
+    @include respond-to(sm) {
+      font-size: 1rem;
+    }
+  }
+  &__price {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $color-content-primary;
+
+    @include respond-to(xs) {
+      font-size: 1.0625rem;
+    }
+    @include respond-to(sm) {
+      font-size: 1.1875rem;
+    }
+  }
+}
