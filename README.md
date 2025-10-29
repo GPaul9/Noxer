@@ -22,7 +22,6 @@ https://gpaul9.github.io/noxer/
 ## API
 BASE_URL: https://noxer-test.ru/webapp/api
 
-Auth
 | Метод | Путь | Описание |
 |---|---|---|
 | `GET` | `/products/on_main` | Раздел с продуктами |
