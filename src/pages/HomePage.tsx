@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 import { useFetchRequest } from '@/shared/hooks/useFetchData';
 
-const ProductsList = lazy(() => import('@/features/productsList/ui/ProductsList'));
+const ProductsList = lazy(() => import('@/features/productsList'));
 
 const HomePage = () => {
   const dataQuery = useFetchRequest();

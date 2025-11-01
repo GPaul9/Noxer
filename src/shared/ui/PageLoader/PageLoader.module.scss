@@ -12,7 +12,7 @@
 
   width: 100vw;
   height: 100vh;
-  background-color: rgba($color-content-primary, 0.5);
+  background-color: rgba($color-bg-page, 0.3);
 
   &__icon {
     @include loader(60px);

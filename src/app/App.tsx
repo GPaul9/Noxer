@@ -10,7 +10,7 @@ const AccountPage = lazy(() => import('@/pages/AccountPage'));
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/noxer'>
       <Suspense fallback={<PageLoader />} >
         <Routes>
           <Route path='/' element={<MainLayout />} >

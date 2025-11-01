@@ -1,5 +1,7 @@
 @use '@/styles/variables' as *;
 @use '@/styles/mixins' as *;
+@use '@/styles/typography' as *;
+
 
 .dropdown {
   position: fixed;
@@ -30,26 +32,18 @@
   &__popular-title {
     margin: 0;
     margin-bottom: 9px;
-
-    font-size: 0.9375rem;
-    font-weight: 700;
     color: $color-title;
+
+    @include title1;
   }
 
   &__popular-item {
     display: flex;
     align-items: center;
     gap: 10px;
-
-    font-size: 0.875rem;
     color: $color-content-primary;
 
-    @include respond-to(xs) {
-      font-size: 0.9375rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1.0625rem;
-    }
+    @include sub3;
   }
 
   &__popular-icon {
@@ -80,10 +74,11 @@
 
   &__result-empty {
     padding: 40px 0 20px;
-    font-size: 0.8rem;
     color: $color-content-primary;
     width: 100%;
     text-align: center;
+
+    @include sub3;
   }
 }
 
@@ -116,27 +111,13 @@
   &__title {
     margin: 0;
     margin-bottom: 15px;
-    font-size: 0.8125rem;
-    font-weight: 400;
     color: $color-content-primary;
 
-    @include respond-to(xs) {
-      font-size: 0.875rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1rem;
-    }
+    @include body5;
   }
   &__price {
-    font-size: 1rem;
-    font-weight: 700;
     color: $color-content-primary;
 
-    @include respond-to(xs) {
-      font-size: 1.0625rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1.1875rem;
-    }
+    @include sub2;
   }
 }

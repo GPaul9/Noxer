@@ -1,5 +1,5 @@
 @use '@/styles/variables' as *;
-@use '@/styles/mixins' as *;
+@use '@/styles/typography' as *;
 
 .search {
   position: relative;
@@ -29,39 +29,25 @@
   &__input {
     padding: 11px 0;
     border: none;
-
     width: 100%;
-    font-size: 0.875rem;
     color: inherit;
     background: none;
     outline: transparent;
 
-    @include respond-to(xs) {
-      font-size: 0.9375rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1.0625rem;
-    }
+    @include sub3;
   }
 
   &__btn {
     padding: 10px 14px;
     border-radius: 20px;
-    font-size: 0.6875rem;
-    font-weight: 500;
     color: $color-content-secondary;
     background-color: $color-bg-secondary;
     transition: background-color 0.3s ease;
 
-    &:hover, &:hover {
-      background-color: rgba($color-bg-secondary, 0.8);
-    }
+    @include tag1;
 
-    @include respond-to(xs) {
-      font-size: 0.75rem;
-    }
-    @include respond-to(sm) {
-      font-size: 0.875rem;
+    &:hover {
+      background-color: rgba($color-bg-secondary, 0.7);
     }
   }
 }

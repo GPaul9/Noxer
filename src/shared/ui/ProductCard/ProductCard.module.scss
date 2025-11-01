@@ -1,5 +1,5 @@
 @use '@/styles/variables' as *;
-@use '@/styles/mixins' as *;
+@use '@/styles/typography' as *;
 
 .card {
   position: relative;
@@ -42,53 +42,39 @@
     display: block;
     margin: 0;
     margin-bottom: 2px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: $color-content-primary;
 
-    @include respond-to(xs) {
-      font-size: 1.0625rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1.185rem;
-    }
+    @include sub2;
   }
 
   &__title {
     margin: 0;
-    font-size: 0.8125rem;
-    font-weight: 400;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
-    @include respond-to(xs) {
-      font-size: 0.875rem;
-    }
-    @include respond-to(sm) {
-      font-size: 1rem;
-    }
+    @include body5;
   }
 
   &__link {
-    padding: 10px 51px;
+    position: relative;
+    padding: 9px 50px;
+    border: 1px solid $color-bg-light;
     border-radius: 20px;
     background-color: $color-bg-light;
-    font-size: 0.75rem;
-    font-weight: 500;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
+    outline: transparent;
 
-    &:hover, &:active {
+    @include tag2;
+
+    &:focus-visible {
+      border-color: $color-bg-secondary;
+    }
+
+    &:hover {
       background-color: rgba($color-bg-secondary, 0.5);
       color: $color-content-secondary;
     }
 
-    @include respond-to(xs) {
-      font-size: 0.8125rem;
-    }
-    @include respond-to(sm) {
-      font-size: 0.9375rem;
+    &:active {
+      top: 1px;
     }
   }
 }
@@ -106,10 +92,9 @@
   &__item {
     padding: 4px 8px;
     border-radius: 15px;
-
-    font-size: 0.75rem;
-    font-weight: 600;
     color: $color-content-secondary;
     text-transform: uppercase;
+
+    @include tag3;
   }
 }

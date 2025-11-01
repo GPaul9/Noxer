@@ -2,8 +2,7 @@ import styles from './ProductsList.module.scss';
 
 import { UseQueryResult } from '@tanstack/react-query';
 import { MainData } from '@/shared/types/mainData';
-import { MessageBlock } from '@/shared/ui/MessageBlock';
-import { ProductCard } from '@/shared/ui/ProductCard';
+import { MessageBlock, ProductCard } from '@/shared/ui';
 import { ProductsListSkeleton } from './ProductsListSkeleton';
 
 type TProps = {

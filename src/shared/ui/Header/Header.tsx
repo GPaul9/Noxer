@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 
 import '@/shared/constants/breakpoints';
-import { SearchBar } from '@/features/search/ui/SearchBar';
+import { SearchBar } from '@/features/search';
 
 export const Header = () => {
   return(
